@@ -15,13 +15,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         diceImageView1.image = UIImage(named: "DiceSix")
-        diceImageView2.image = UIImage(name: "DiceTwo")
+        diceImageView2.image = UIImage(named: "DiceTwo")
         diceImageView1.alpha = 0.2
     }
     
-    @IBAction func rollButtonPressed(_ sender: UITextField) {
-        print("Button got tapped")
-        
-        
+    @IBAction func rollButtonPressed(_ sender: UIButton) {
+        diceImageView1.image = UIImage(named: "DiceFour")
+        diceImageView2.image = UIImage(named: "DiceFour")
     }
 }
