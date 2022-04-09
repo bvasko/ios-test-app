@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     
     var leftDiceNumber = 1
     var rightDiceNumber = 5
-    var diceArray = [UIImage(named: "DiceOne"), UIImage(named: "DiceTwo"), UIImage(named: "DiceThree"), UIImage(named: "DiceFour"), UIImage(named: "DiceFive"), UIImage(named: "DiceSix")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +23,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func rollButtonPressed(_ sender: UIButton) {
+        let diceArray = [UIImage(named: "DiceOne"), UIImage(named: "DiceTwo"), UIImage(named: "DiceThree"), UIImage(named: "DiceFour"), UIImage(named: "DiceFive"), UIImage(named: "DiceSix")]
         diceImageView1.image = diceArray[Int.random(in: 0...5)]
         diceImageView2.image = diceArray[Int.random(in: 0...5)]
         leftDiceNumber += 1
